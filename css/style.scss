@@ -39,7 +39,6 @@ dd {
   background-position: center;
   height: 1024px;
   &__content {
-    width: 60%;
     padding-top: 217px;
     &-title {
       font-weight: 700;
@@ -47,7 +46,7 @@ dd {
       color: #ffffff;
     }
     &-desc {
-      width: 69%;
+      width: 40%;
       font-weight: 300;
       font-size: 18px;
       color: #ffffff;
@@ -67,6 +66,10 @@ dd {
       font-size: 18px;
       color: #ffffff;
       cursor: pointer;
+      transition: background 2s;
+      &:hover {
+        background: blue;
+      }
     }
   }
 }
@@ -97,3 +100,4 @@ dd {
     }
   }
 }
+@import "../css/media";
