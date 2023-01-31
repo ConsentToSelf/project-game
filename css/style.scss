@@ -1,15 +1,16 @@
 * {
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul[class],
 ol[class] {
-  padding: 0;
+    padding: 0;
 }
 
 body,
@@ -26,78 +27,113 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
+
+// чаще используются
+.header__content-btn,
+.playstation__content-btn {
+    margin-top: 44px;
+    background: #9c0332;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 74px 13px 74px;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 2s;
+    &:hover {
+        background: blue;
+    }
+}
+
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.background {
+    background: #000915;
 }
 
 .header {
-  background: url("../img/skypro2077.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 1024px;
-  &__content {
-    padding-top: 217px;
-    &-title {
-      font-weight: 700;
-      font-size: 64px;
-      color: #ffffff;
+    background: url("../img/skypro2077.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1024px;
+    &__content {
+        padding-top: 217px;
+        &-title {
+            font-weight: 700;
+            font-size: 64px;
+            color: #ffffff;
+        }
+        &-desc {
+            width: 40%;
+            font-weight: 300;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 32px;
+            span {
+                font-weight: 700;
+            }
+        }
     }
-    &-desc {
-      width: 40%;
-      font-weight: 300;
-      font-size: 18px;
-      color: #ffffff;
-      margin-top: 32px;
-      span {
-        font-weight: 700;
-      }
-    }
-    &-btn {
-      margin-top: 44px;
-      background: #9c0332;
-      border: none;
-      border-radius: 30px;
-      padding: 13px 74px 13px 74px;
-      outline: none;
-      font-weight: 400;
-      font-size: 18px;
-      color: #ffffff;
-      cursor: pointer;
-      transition: background 2s;
-      &:hover {
-        background: blue;
-      }
-    }
-  }
 }
-.footer {
-  padding-top: 128px;
-  padding-bottom: 128px;
-  background: #000915;
-  &__content {
+
+.content {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    &__content {
+        display: flex;
+        gap: 32px;
+        &-item {
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                border: 3px solid #44d2ff;
+                border-radius: 16px;
+            }
+            &_text {
+                position: absolute;
+                padding-left: 32px;
+                padding-bottom: 32px;
+                font-weight: 600;
+                font-size: 24px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.playstation {
     display: flex;
-    gap: 32px;
-    &-item {
-      display: flex;
-      align-items: flex-end;
-      position: relative;
-      transition: 0.5s;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.04);
-      }
-      &_text {
-        position: absolute;
-        padding-left: 32px;
-        padding-bottom: 32px;
-        font-weight: 600;
-        font-size: 24px;
-        color: #ffffff;
-      }
+    justify-content: center;
+    height: 800px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 135px;
     }
-  }
+    &__content {
+        &-title {
+            font-size: 48px;
+            color: #ffffff;
+            margin-bottom: 32px;
+        }
+        &-desc {
+            font-size: 18px;
+            font-weight: 300;
+            color: #ffffff;
+        }
+        &-btn {
+            margin-top: 32px;
+        }
+    }
 }
+
 @import "../css/media";

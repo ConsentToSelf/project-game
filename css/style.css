@@ -30,9 +30,32 @@ dd {
   margin: 0;
 }
 
+.header__content-btn,
+.playstation__content-btn {
+  margin-top: 44px;
+  background: #9c0332;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 74px 13px 74px;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 2s;
+}
+.header__content-btn:hover,
+.playstation__content-btn:hover {
+  background: blue;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+}
+
+.background {
+  background: #000915;
 }
 
 .header {
@@ -59,49 +82,56 @@ dd {
 .header__content-desc span {
   font-weight: 700;
 }
-.header__content-btn {
-  margin-top: 44px;
-  background: #9c0332;
-  border: none;
-  border-radius: 30px;
-  padding: 13px 74px 13px 74px;
-  outline: none;
-  font-weight: 400;
-  font-size: 18px;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background 2s;
-}
-.header__content-btn:hover {
-  background: blue;
-}
 
-.footer {
+.content {
   padding-top: 128px;
   padding-bottom: 128px;
-  background: #000915;
 }
-.footer__content {
+.content__content {
   display: flex;
   gap: 32px;
 }
-.footer__content-item {
+.content__content-item {
   display: flex;
   align-items: flex-end;
   position: relative;
-  transition: 0.5s;
   cursor: pointer;
 }
-.footer__content-item:hover {
-  transform: scale(1.04);
+.content__content-item:hover {
+  border: 3px solid #44d2ff;
+  border-radius: 16px;
 }
-.footer__content-item_text {
+.content__content-item_text {
   position: absolute;
   padding-left: 32px;
   padding-bottom: 32px;
   font-weight: 600;
   font-size: 24px;
   color: #ffffff;
+}
+
+.playstation {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+.playstation__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 135px;
+}
+.playstation__content-title {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.playstation__content-desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.playstation__content-btn {
+  margin-top: 32px;
 }
 
 @media (max-width: 1200px) {
@@ -119,10 +149,25 @@ dd {
     width: 100%;
     text-align: center;
   }
-  .footer__content {
+  .content__content {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+  .playstation__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+  .playstation__wrapper img {
+    width: 90%;
+  }
+  .playstation__content {
+    text-align: center;
+  }
+  br {
+    display: none;
   }
 }
 @media (max-width: 575px) {
