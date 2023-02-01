@@ -26,19 +26,17 @@
         </div>
     </header>
     <section class="content center background">
-        <div class="content__content">
-            <div class="content__content-item">
-                <img src="img/content-img/game1.png" alt="game1" />
-                <p class="content__content-item_text">Игра 1</p>
-            </div>
-            <div class="content__content-item">
-                <img src="img/content-img/game2.png " alt="game2 " />
-                <p class="content__content-item_text">Игра 2</p>
-            </div>
-            <div class="content__content-item">
-                <img src="img/content-img/game3.png " alt="game3 " />
-                <p class="content__content-item_text">Игра 3</p>
-            </div>
+        <div class="content__game">
+            <img src="img/content-img/game1.png" alt="game1" />
+            <p class="content__name">Игра 1</p>
+        </div>
+        <div class="content__game">
+            <img src="img/content-img/game2.png " alt="game2 " />
+            <p class="content__name">Игра 2</p>
+        </div>
+        <div class="content__game">
+            <img src="img/content-img/game3.png " alt="game3 " />
+            <p class="content__name">Игра 3</p>
         </div>
     </section>
     <section class="playstation background center">
@@ -48,11 +46,14 @@
                 <div class="playstation__content-desc">
                     Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы <br /> узнаете к какому времени года он относится
                 </div>
-                <button class="playstation__content-btn">Играть</button>
+                <button onclick="seasonsTimes()" class="playstation__content-btn">
+            Играть
+          </button>
             </div>
             <img src="img/undraw_video_game_night.svg " alt="playstation " />
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

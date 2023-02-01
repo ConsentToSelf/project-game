@@ -86,27 +86,27 @@ dd {
 .content {
   padding-top: 128px;
   padding-bottom: 128px;
-}
-.content__content {
-  display: flex;
+  display: grid;
   gap: 32px;
+  grid-template-columns: repeat(auto-fill, 378px);
 }
-.content__content-item {
-  display: flex;
-  align-items: flex-end;
+.content__game {
   position: relative;
   cursor: pointer;
 }
-.content__content-item:hover {
+.content__game:hover {
   border: 3px solid #44d2ff;
   border-radius: 16px;
 }
-.content__content-item_text {
-  position: absolute;
-  padding-left: 32px;
-  padding-bottom: 32px;
+.content__game img {
+  width: 100%;
+}
+.content__name {
   font-weight: 600;
   font-size: 24px;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
   color: #ffffff;
 }
 
