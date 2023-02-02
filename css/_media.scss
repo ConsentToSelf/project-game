@@ -51,4 +51,7 @@
             }
         }
     }
+    .content {
+        grid-template-columns: repeat(auto-fill, 343px);
+    }
 }

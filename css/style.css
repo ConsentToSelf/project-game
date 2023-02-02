@@ -89,6 +89,7 @@ dd {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(auto-fill, 378px);
+  justify-content: center;
 }
 .content__game {
   position: relative;
@@ -179,5 +180,8 @@ dd {
   }
   .header__content-desc {
     font-size: 14px;
+  }
+  .content {
+    grid-template-columns: repeat(auto-fill, 343px);
   }
 }/*# sourceMappingURL=style.css.map */
