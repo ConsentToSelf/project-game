@@ -155,17 +155,28 @@ dd {
     align-items: center;
     justify-content: center;
   }
+  .playstation {
+    height: 100%;
+  }
   .playstation__wrapper {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 64px;
+    padding-bottom: 85px;
   }
   .playstation__wrapper img {
     width: 90%;
   }
   .playstation__content {
     text-align: center;
+  }
+  .words {
+    height: 100%;
+  }
+  .words__wrapper {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
   br {
     display: none;

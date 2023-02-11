@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header center">
-        <div class="header__content">
-            <h1 class="header__content-title">
-                Добро пожаловать <br /> на мой сайт !
-            </h1>
-            <p class="header__content-desc">
-                Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
-                <span>поехали</span> и <span>приступай</span>
-            </p>
-            <button class="header__content-btn">Поехали</button>
-        </div>
+      <div class="header__content">
+        <h1 class="header__content-title">
+          Добро пожаловать <br />
+          на мой сайт !
+        </h1>
+        <p class="header__content-desc">
+          Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+          <span>поехали</span> и <span>приступай</span>
+        </p>
+        <button class="header__content-btn">Поехали</button>
+      </div>
     </header>
     <section class="content center background">
-        <div class="content__game">
-            <img src="img/content-img/game1.png" alt="game1" />
-            <p class="content__name">Игра 1</p>
-        </div>
-        <div class="content__game">
-            <img src="img/content-img/game2.png " alt="game2 " />
-            <p class="content__name">Игра 2</p>
-        </div>
-        <div class="content__game">
-            <img src="img/content-img/game3.png " alt="game3 " />
-            <p class="content__name">Игра 3</p>
-        </div>
+      <div class="content__game">
+        <img src="img/content-img/game1.png" alt="game1" />
+        <p class="content__name">Игра 1</p>
+      </div>
+      <div class="content__game">
+        <img src="img/content-img/game2.png " alt="game2 " />
+        <p class="content__name">Игра 2</p>
+      </div>
+      <div class="content__game">
+        <img src="img/content-img/game3.png " alt="game3 " />
+        <p class="content__name">Игра 3</p>
+      </div>
     </section>
     <section class="playstation background center">
-        <div class="playstation__wrapper">
-            <div class="playstation__content">
-                <h3 class="playstation__content-title">Времена года!</h3>
-                <div class="playstation__content-desc">
-                    Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы <br /> узнаете к какому времени года он относится
-                </div>
-                <button onclick="seasonsTimes()" class="playstation__content-btn">
+      <div class="playstation__wrapper">
+        <div class="playstation__content">
+          <h3 class="playstation__content-title">Времена года!</h3>
+          <div class="playstation__content-desc">
+            Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы <br />
+            узнаете к какому времени года он относится
+          </div>
+          <button onclick="seasonsTimes()" class="playstation__content-btn">
             Играть
           </button>
-            </div>
-            <img src="img/undraw_video_game_night.svg " alt="playstation " />
         </div>
+        <img src="img/undraw_video_game_night.svg " alt="playstation " />
+      </div>
+    </section>
+    <section class="words background playstation center">
+      <div class="words__wrapper playstation__wrapper">
+        <img src="img/undraw_gaming_re.svg" alt="playstation" />
+        <div class="words__content playstation__content">
+          <h3 class="playstation__content-title">Запомни слова</h3>
+          <div class="playstation__content-desc">
+            При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+            необходимо запомнить.
+          </div>
+          <button onclick="getMyGame()" class="playstation__content-btn">
+            Играть
+          </button>
+        </div>
+      </div>
     </section>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
