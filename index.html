@@ -13,10 +13,14 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header class="header center">
       <div class="header__content">
-        <h1 class="header__content-title">Добро пожаловать <br> на мой сайт !</h1>
+        <h1 class="header__content-title">
+          Добро пожаловать <br />
+          на мой сайт !
+        </h1>
         <p class="header__content-desc">
           Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
           <span>поехали</span> и <span>приступай</span>
@@ -24,21 +28,50 @@
         <button class="header__content-btn">Поехали</button>
       </div>
     </header>
-     <footer class="footer center">
-      <div class="footer__content">
-        <div class="footer__content-item">
-          <img src="img/footer-img/game1.png" alt="game1" />
-          <p class="footer__content-item_text">Игра 1</p>
+    <section class="content center background">
+      <div class="content__game">
+        <img src="img/content-img/game1.png" alt="game1" />
+        <p class="content__name">Игра 1</p>
+      </div>
+      <div class="content__game">
+        <img src="img/content-img/game2.png " alt="game2 " />
+        <p class="content__name">Игра 2</p>
+      </div>
+      <div class="content__game">
+        <img src="img/content-img/game3.png " alt="game3 " />
+        <p class="content__name">Игра 3</p>
+      </div>
+    </section>
+    <section class="playstation background center">
+      <div class="playstation__wrapper">
+        <div class="playstation__content">
+          <h3 class="playstation__content-title">Времена года!</h3>
+          <div class="playstation__content-desc">
+            Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы <br />
+            узнаете к какому времени года он относится
+          </div>
+          <button onclick="seasonsTimes()" class="playstation__content-btn">
+            Играть
+          </button>
         </div>
-        <div class="footer__content-item">
-          <img src="img/footer-img/game2.png" alt="game2" />
-          <p class="footer__content-item_text">Игра 2</p>
-        </div>
-        <div class="footer__content-item">
-          <img src="img/footer-img/game3.png" alt="game3" />
-          <p class="footer__content-item_text">Игра 3</p>
+        <img src="img/undraw_video_game_night.svg " alt="playstation " />
+      </div>
+    </section>
+    <section class="words background playstation center">
+      <div class="words__wrapper playstation__wrapper">
+        <img src="img/undraw_gaming_re.svg" alt="playstation" />
+        <div class="words__content playstation__content">
+          <h3 class="playstation__content-title">Запомни слова</h3>
+          <div class="playstation__content-desc">
+            При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+            необходимо запомнить.
+          </div>
+          <button onclick="getMyGame()" class="playstation__content-btn">
+            Играть
+          </button>
         </div>
       </div>
-    </footer> 
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
